@@ -9,7 +9,7 @@ extents = Vector2( 32, 32 )
 [node name="squareAqua" type="Sprite"]
 texture = ExtResource( 1 )
 script = ExtResource( 2 )
-color = "aqua"
+color = "aquamarine"
 
 [node name="Area2D" type="Area2D" parent="."]
 

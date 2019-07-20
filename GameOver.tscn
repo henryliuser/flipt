@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="Gradient" id=1]
+offsets = PoolRealArray( 0, 0.33, 0.66, 1 )
+colors = PoolColorArray( 0.0980392, 0.662745, 0.662745, 1, 0.0470588, 0.564706, 0.905882, 1, 0.0588235, 0.976471, 0.54902, 1, 0.654902, 0.196078, 1, 1 )
+
+[sub_resource type="GradientTexture" id=2]
+gradient = SubResource( 1 )
+width = 1920
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 1920.0
+margin_bottom = 1080.0
+texture = SubResource( 2 )
+expand = true
+
+[node name="Label" type="Label" parent="."]
+margin_left = 976.589
+margin_top = 577.815
+margin_right = 1035.59
+margin_bottom = 611.815
+text = "LOL REKT
+"

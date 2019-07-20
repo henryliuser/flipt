@@ -9,7 +9,7 @@ extents = Vector2( 32, 32 )
 [node name="squareLeaf" type="Sprite"]
 texture = ExtResource( 1 )
 script = ExtResource( 2 )
-color = "leaf"
+color = "leafcutter"
 
 [node name="Area2D" type="Area2D" parent="."]
 
