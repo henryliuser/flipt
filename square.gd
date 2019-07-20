@@ -25,13 +25,11 @@ func _on_Area2D_body_entered(body):
 	else:
 		body.getHit()
 		Global.test+=1
-		
-		print("siguhsasod" + str(Global.test) + " " + str(self.name))
 
 func patrol():
-	if position.x > xPatrol[1] or position.x < xPatrol[0]:
+	if position.x >= xPatrol[1] or position.x <= xPatrol[0]:
 		xVel *= -1
-	if position.y > yPatrol[1] or position.y < yPatrol[0]:
+	if position.y >= yPatrol[1] or position.y <= yPatrol[0]:
 		yVel *= -1
 
 func _on_Area2D_body_exited(body):

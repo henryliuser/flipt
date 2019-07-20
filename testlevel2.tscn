@@ -1,90 +1,93 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://Player.tscn" type="PackedScene" id=1]
-[ext_resource path="res://squareAqua.tscn" type="PackedScene" id=2]
-[ext_resource path="res://squareBlu.tscn" type="PackedScene" id=3]
-[ext_resource path="res://squareLeaf.tscn" type="PackedScene" id=4]
-[ext_resource path="res://squareBlack.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Level.gd" type="Script" id=1]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://squareAqua.tscn" type="PackedScene" id=3]
+[ext_resource path="res://squareBlu.tscn" type="PackedScene" id=4]
+[ext_resource path="res://squareLeaf.tscn" type="PackedScene" id=5]
+[ext_resource path="res://squareBlack.tscn" type="PackedScene" id=6]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+hpLul = 2
 
-[node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 60.0001, 190 )
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 146.584, 182.575 )
 
-[node name="squareAqua" parent="." instance=ExtResource( 2 )]
+[node name="squareAqua" parent="." instance=ExtResource( 3 )]
 position = Vector2( 236, 540 )
 scale = Vector2( 6.75, 1 )
 
-[node name="squareAqua4" parent="." instance=ExtResource( 2 )]
+[node name="squareAqua4" parent="." instance=ExtResource( 3 )]
 position = Vector2( 630, 310 )
 scale = Vector2( 6.75, 1 )
 
-[node name="squareAqua2" parent="." instance=ExtResource( 2 )]
+[node name="squareAqua2" parent="." instance=ExtResource( 3 )]
 position = Vector2( 1160, 880 )
 rotation = 1.5708
 scale = Vector2( 6.75, 1 )
 
-[node name="squareAqua3" parent="." instance=ExtResource( 2 )]
+[node name="squareAqua3" parent="." instance=ExtResource( 3 )]
 position = Vector2( 1530, 500 )
 rotation = 1.5708
 scale = Vector2( 6.75, 1 )
 
-[node name="squareBlu" parent="." instance=ExtResource( 3 )]
-position = Vector2( 421, 858 )
+[node name="squareBlu" parent="." instance=ExtResource( 4 )]
+position = Vector2( 426.106, 856.298 )
 scale = Vector2( 1, 5.875 )
 
-[node name="squareBlu2" parent="." instance=ExtResource( 3 )]
+[node name="squareBlu2" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1530, 890 )
 scale = Vector2( 1, 5.875 )
 
-[node name="squareBlu3" parent="." instance=ExtResource( 3 )]
+[node name="squareBlu3" parent="." instance=ExtResource( 4 )]
 position = Vector2( 790, 490 )
 scale = Vector2( 1, 5.875 )
 
-[node name="squareLeaf" parent="." instance=ExtResource( 4 )]
-position = Vector2( 216, 322 )
+[node name="squareLeaf" parent="." instance=ExtResource( 5 )]
+position = Vector2( 214.304, 366.096 )
 scale = Vector2( 5.8125, 1 )
 
-[node name="squareLeaf2" parent="." instance=ExtResource( 4 )]
+[node name="squareLeaf2" parent="." instance=ExtResource( 5 )]
 position = Vector2( 790, 870 )
 rotation = 1.5708
 scale = Vector2( 5.8125, 1 )
 
-[node name="squareLeaf3" parent="." instance=ExtResource( 4 )]
+[node name="squareLeaf3" parent="." instance=ExtResource( 5 )]
 position = Vector2( 1160, 500 )
 rotation = 1.5708
 scale = Vector2( 5.8125, 1 )
 
 [node name="Node2D" type="Node2D" parent="."]
 
-[node name="squareBlack" parent="." instance=ExtResource( 5 )]
+[node name="squareBlack" parent="." instance=ExtResource( 6 )]
 position = Vector2( 961.462, 30 )
 rotation = 1.5708
 scale = Vector2( 1, 30.2019 )
 
-[node name="squareBlack5" parent="." instance=ExtResource( 5 )]
+[node name="squareBlack5" parent="." instance=ExtResource( 6 )]
 position = Vector2( 1700, 310 )
 rotation = 1.5708
 scale = Vector2( 1, 30.2019 )
 
-[node name="squareBlack7" parent="." instance=ExtResource( 5 )]
+[node name="squareBlack7" parent="." instance=ExtResource( 6 )]
 position = Vector2( 1020, 690 )
 rotation = 1.5708
 scale = Vector2( 0.98, 19.688 )
 
-[node name="squareBlack6" parent="." instance=ExtResource( 5 )]
+[node name="squareBlack6" parent="." instance=ExtResource( 6 )]
 position = Vector2( 960, 1040 )
 rotation = 1.5708
 scale = Vector2( 1, 30.2019 )
 
-[node name="squareBlack2" parent="." instance=ExtResource( 5 )]
-position = Vector2( 20, 1200 )
+[node name="squareBlack2" parent="." instance=ExtResource( 6 )]
+position = Vector2( 18.304, 1294.98 )
 scale = Vector2( 1, 30.2019 )
 
-[node name="squareBlack3" parent="." instance=ExtResource( 5 )]
+[node name="squareBlack3" parent="." instance=ExtResource( 6 )]
 position = Vector2( 1920, 1160 )
 scale = Vector2( 1, 30.2019 )
 
-[node name="squareBlack4" parent="." instance=ExtResource( 5 )]
+[node name="squareBlack4" parent="." instance=ExtResource( 6 )]
 position = Vector2( 421, -249.116 )
 scale = Vector2( 0.96875, 30.2849 )

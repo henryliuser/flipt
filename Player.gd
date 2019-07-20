@@ -11,6 +11,7 @@ var hp = 3
 func _ready():
 #	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	Input.warp_mouse_position(position)
+	hp = get_parent().hpLul
 
 func _process(delta):
 	frameCounter += 1
