@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://squareBlack.tscn" type="PackedScene" id=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 190, 120 )
+
+[node name="squareBlack" parent="." instance=ExtResource( 2 )]
+position = Vector2( 30, 600 )
+scale = Vector2( 1, 19.5625 )
+
+[node name="squareBlack14" parent="." instance=ExtResource( 2 )]
+position = Vector2( 30, 600 )
+scale = Vector2( 1, 19.5625 )
+
+[node name="squareBlack2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1900, 570 )
+scale = Vector2( 1, 19.5625 )
+
+[node name="squareBlack15" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1900, 570 )
+scale = Vector2( 1, 19.5625 )
+
+[node name="squareBlack3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 970, 1050 )
+rotation = 1.5708
+scale = Vector2( 1, 30.0746 )
+
+[node name="squareBlack4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 960, 20 )
+rotation = 1.5708
+scale = Vector2( 1, 21.5127 )
