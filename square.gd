@@ -5,21 +5,21 @@ export var yVel = 0
 export var patrolling = false
 export var yPatrol = [0,1080]
 export var xPatrol = [0,1920]
-var body = null
+var anybody = null
 
 
 func _process(delta):
 	if color == "black":
-		body = null
-	if body != null:
-		body.checkHit(color)
+		anybody = null
+	if anybody != null:
+		anybody.checkHit(color)
 	position.x += xVel * delta
 	position.y += yVel * delta
 	if patrolling:
 		patrol()
 
 func _on_Area2D_body_entered(body):
-	self.body = body
+	anybody = body
 	if body.getColor() == color:
 		pass
 	else:
@@ -35,6 +35,6 @@ func patrol():
 		yVel *= -1
 
 func _on_Area2D_body_exited(body):
-	body = null
+	anybody = null
 	
 

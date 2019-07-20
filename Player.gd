@@ -41,7 +41,6 @@ func checkHit(col):
 		getHit()
 
 func getHit():
-	print("Hit")
 	hit += 1
 	if hit >= hp:
 		get_tree().change_scene("GameOver.tscn")
