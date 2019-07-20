@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Player.gd" type="Script" id=1]
+[ext_resource path="res://curser_2.png" type="Texture" id=2]
+[ext_resource path="res://curser_1.png" type="Texture" id=3]
+[ext_resource path="res://curser_0.png" type="Texture" id=4]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "leafcutter",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "aquamarine",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "blu",
+"speed": 5.0
+} ]
+
+[node name="Player" type="KinematicBody2D"]
+scale = Vector2( 2.5, 2.5 )
+script = ExtResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -12.5074, -12.5314 )
+frames = SubResource( 1 )
+animation = "blu"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2( -12.5074, -12.5314 )
+polygon = PoolVector2Array( 2.03895, 11.9598, -10.7943, -0.103436, -10.9227, -2.92676, -12.0135, -2.86259, -12.0135, -12.0384, -3.03019, -12.0384, -3.03019, -10.8834, -0.0785408, -10.8834, 11.9847, 2.07822, 13.1397, 13.1148 )
