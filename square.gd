@@ -3,6 +3,7 @@ export var color = "blu"
 export var xVel = 0
 export var yVel = 0
 export var patrolling = false
+export var omega = 0.0
 export var yPatrol = [0,1080]
 export var xPatrol = [0,1920]
 var anybody = null
@@ -17,6 +18,7 @@ func _process(delta):
 	position.y += yVel * delta
 	if patrolling:
 		patrol()
+	rotation_degrees += omega
 
 func _on_Area2D_body_entered(body):
 	anybody = body

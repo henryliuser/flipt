@@ -1,2 +1,2 @@
 extends Node2D
-export var hpLul = 3
+export var hpLul = 1

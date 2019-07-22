@@ -1,11 +1,12 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Level.gd" type="Script" id=1]
 [ext_resource path="res://squareAqua.tscn" type="PackedScene" id=2]
 [ext_resource path="res://squareBlu.tscn" type="PackedScene" id=3]
 [ext_resource path="res://squareLeaf.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=5]
-[ext_resource path="res://squareBlack.tscn" type="PackedScene" id=6]
+[ext_resource path="res://squareWhite.tscn" type="PackedScene" id=6]
+[ext_resource path="res://squareBlack.tscn" type="PackedScene" id=7]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 1 )
@@ -25,52 +26,57 @@ scale = Vector2( 5.62177, 1 )
 [node name="Player" parent="." instance=ExtResource( 5 )]
 position = Vector2( 185.03, 164.729 )
 
+[node name="squareWhite" parent="." instance=ExtResource( 6 )]
+position = Vector2( 1759, 20 )
+scale = Vector2( 3.46875, 1 )
+path = "res://Level5.tscn"
+
 [node name="Node2D" type="Node2D" parent="."]
 editor/display_folded = true
 
-[node name="squareBlack" parent="Node2D" instance=ExtResource( 6 )]
+[node name="squareBlack" parent="Node2D" instance=ExtResource( 7 )]
 position = Vector2( 30, 600 )
 scale = Vector2( 1, 19.5625 )
 
-[node name="squareBlack14" parent="Node2D" instance=ExtResource( 6 )]
+[node name="squareBlack14" parent="Node2D" instance=ExtResource( 7 )]
 position = Vector2( 30, 600 )
 scale = Vector2( 1, 19.5625 )
 
-[node name="squareBlack2" parent="Node2D" instance=ExtResource( 6 )]
+[node name="squareBlack2" parent="Node2D" instance=ExtResource( 7 )]
 position = Vector2( 1900, 570 )
 scale = Vector2( 1, 19.5625 )
 
-[node name="squareBlack15" parent="Node2D" instance=ExtResource( 6 )]
+[node name="squareBlack15" parent="Node2D" instance=ExtResource( 7 )]
 position = Vector2( 1900, 570 )
 scale = Vector2( 1, 19.5625 )
 
-[node name="squareBlack16" parent="Node2D" instance=ExtResource( 6 )]
+[node name="squareBlack16" parent="Node2D" instance=ExtResource( 7 )]
 position = Vector2( 373.39, 420.982 )
 scale = Vector2( 1, 14.9057 )
 
-[node name="squareBlack17" parent="Node2D" instance=ExtResource( 6 )]
+[node name="squareBlack17" parent="Node2D" instance=ExtResource( 7 )]
 position = Vector2( 774.084, 709.084 )
 scale = Vector2( 1, 15.2161 )
 
-[node name="squareBlack18" parent="Node2D" instance=ExtResource( 6 )]
+[node name="squareBlack18" parent="Node2D" instance=ExtResource( 7 )]
 position = Vector2( 1151.6, 424.293 )
 scale = Vector2( 1, 14.2848 )
 
-[node name="squareBlack19" parent="Node2D" instance=ExtResource( 6 )]
+[node name="squareBlack19" parent="Node2D" instance=ExtResource( 7 )]
 position = Vector2( 1552.29, 707.428 )
 scale = Vector2( 1, 15.3714 )
 
-[node name="squareBlack3" parent="Node2D" instance=ExtResource( 6 )]
+[node name="squareBlack3" parent="Node2D" instance=ExtResource( 7 )]
 position = Vector2( 970, 1050 )
 rotation = 1.5708
 scale = Vector2( 1, 30.0746 )
 
-[node name="squareBlack4" parent="Node2D" instance=ExtResource( 6 )]
+[node name="squareBlack4" parent="Node2D" instance=ExtResource( 7 )]
 position = Vector2( 960, 20 )
 rotation = 1.5708
 scale = Vector2( 1, 21.5127 )
 
-[node name="squareBlack5" parent="Node2D" instance=ExtResource( 6 )]
+[node name="squareBlack5" parent="Node2D" instance=ExtResource( 7 )]
 position = Vector2( 740.01, 218.317 )
 rotation = 1.5708
 scale = Vector2( 1, 12 )
@@ -78,7 +84,7 @@ xVel = 300
 patrolling = true
 xPatrol = [ 500, 1300 ]
 
-[node name="squareBlack9" parent="Node2D" instance=ExtResource( 6 )]
+[node name="squareBlack9" parent="Node2D" instance=ExtResource( 7 )]
 position = Vector2( 740.01, 669.907 )
 rotation = 1.5708
 scale = Vector2( 1, 12 )
@@ -86,7 +92,7 @@ xVel = 300
 patrolling = true
 xPatrol = [ 500, 1300 ]
 
-[node name="squareBlack6" parent="Node2D" instance=ExtResource( 6 )]
+[node name="squareBlack6" parent="Node2D" instance=ExtResource( 7 )]
 position = Vector2( 454.851, 438.79 )
 rotation = 1.5708
 scale = Vector2( 1, 10 )
@@ -94,7 +100,7 @@ xVel = 250
 patrolling = true
 xPatrol = [ 400, 1300 ]
 
-[node name="squareBlack8" parent="Node2D" instance=ExtResource( 6 )]
+[node name="squareBlack8" parent="Node2D" instance=ExtResource( 7 )]
 position = Vector2( 454.851, 860.027 )
 rotation = 1.5708
 scale = Vector2( 1, 10 )

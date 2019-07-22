@@ -1,4 +1,7 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://GameOver.gd" type="Script" id=1]
+[ext_resource path="res://joystix monospace copy.ttf" type="DynamicFontData" id=2]
 
 [sub_resource type="Gradient" id=1]
 offsets = PoolRealArray( 0, 0.33, 0.66, 1 )
@@ -8,9 +11,19 @@ colors = PoolColorArray( 0.0980392, 0.662745, 0.662745, 1, 0.0470588, 0.564706, 
 gradient = SubResource( 1 )
 width = 1920
 
+[sub_resource type="DynamicFont" id=3]
+size = 180
+outline_size = 7
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 20
+font_data = ExtResource( 2 )
+
 [node name="Control" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+script = ExtResource( 1 )
 
 [node name="TextureRect" type="TextureRect" parent="."]
 margin_right = 1920.0
@@ -19,9 +32,21 @@ texture = SubResource( 2 )
 expand = true
 
 [node name="Label" type="Label" parent="."]
-margin_left = 976.589
-margin_top = 577.815
-margin_right = 1035.59
-margin_bottom = 611.815
-text = "LOL REKT
-"
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 397.104
+margin_top = 225.91
+margin_right = 1589.1
+margin_bottom = 441.91
+custom_fonts/font = SubResource( 3 )
+text = "LOL REKT"
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 640.594
+margin_top = 762.813
+margin_right = 1252.59
+margin_bottom = 867.813
+custom_fonts/font = SubResource( 4 )
+text = "sorry you had to play this game ngl 
+
+
+PRESS ESC TO RETURN TO MAIN MENU"
